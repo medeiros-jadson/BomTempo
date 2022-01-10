@@ -14,8 +14,8 @@ export const Text = styled.Text`
   font-size: 12px;
 `
 export const Avatar = styled.Image`
-  height: 45;
-  width: 45;
+  height: 45px;
+  width: 45px;
   border-radius: 22.5px;
 `
 
