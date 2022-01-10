@@ -1,11 +1,10 @@
 {
   "expo": {
     "name": "BomTempo",
-    "slug": "BomTempo",
+    "slug": "bomtempo",
+    "scheme": "bomtempo",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"]
   },
   "name": "BomTempo"
 }
