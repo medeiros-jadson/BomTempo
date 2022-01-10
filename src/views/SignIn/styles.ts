@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import Logo from '../../../assets/logo.svg';
+import { RobotoBold } from '../../components/Typography';
 
 export const Container = styled.View`
   flex: 1;
@@ -21,11 +22,9 @@ export const Line = styled.View`
   margin-top: 7px;
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
-export const Text = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.robotoBold};
+export const Text = styled(RobotoBold)`
   font-size: 12px;
   margin: 0 18px;
-  color: ${({ theme }) => theme.colors.secondary};
 `;
 export const LogoSignIn = styled(Logo)`
   margin-bottom: 32px;

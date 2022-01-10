@@ -1,8 +1,21 @@
 import React from 'react';
 import { Container, Content, Line, Wrapper, Text, LogoSignIn } from './styles'
 import BtnSignInGoogle from '../../components/BtnSignInGoogle'
+import { useAuth } from '../../hooks/Auth';
+import { Alert } from 'react-native';
 
 const SignIn: React.FC = () => {
+  const { signInWithGoogle } = useAuth()
+
+  async function HandleSignIn() {
+    try {
+      await signInWithGoogle()
+    } catch (error) {
+      Alert.alert('Atenção', 'Não foi possível realizar login')
+      console.log('SignIn/index.tsx line 13 ~ error ~' + error);
+    }
+  }
+
   return (
     <Container>
       <Content>
@@ -14,7 +27,7 @@ const SignIn: React.FC = () => {
           </Text>
           <Line />
         </Wrapper>
-        <BtnSignInGoogle />
+        <BtnSignInGoogle onPress={() => HandleSignIn()} />
       </Content>
     </Container>
   );
