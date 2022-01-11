@@ -1,10 +1,10 @@
 import API from '../api'
 
-export async function FetchClimate(postalCode: string, countryCode: string) {
+export async function FetchClimate(subregion: string) {
   try {
     return await API.get('/weather', {
       params: {
-        zip: postalCode + ',' + countryCode
+        q: subregion
       }
     })
   } catch (error) {

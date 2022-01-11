@@ -26,7 +26,7 @@ const Main: React.FC = () => {
     if (responseLocation == 'Permission denied') {
       Alert.alert('Permissão de localização negada', 'Não é possível continuar')
     } else {
-      const { data } = await FetchClimate(responseLocation.postalCode, responseLocation.isoCountryCode)
+      const { data } = await FetchClimate(responseLocation.subregion)
       setClimate(data)
       setAdress(responseLocation)
     }
@@ -53,7 +53,6 @@ const Main: React.FC = () => {
               max={climate.main.temp_max.toFixed(0)}
               sensation={climate.main.feels_like.toFixed(0)}
             />
-
           </> :
           <Loading />
       }
