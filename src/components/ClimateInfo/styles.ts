@@ -3,7 +3,7 @@ import { RobotoBold } from '../Typography';
 
 export const Container = styled.View`
   align-items: center;
-  margin-bottom: 73px;
+  margin-bottom: 50px;
 `;
 export const Wrapper = styled.View`
   flex-direction: row;
