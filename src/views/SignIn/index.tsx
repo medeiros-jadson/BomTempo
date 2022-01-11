@@ -11,11 +11,10 @@ const SignIn: React.FC = () => {
     try {
       await signInWithGoogle()
     } catch (error) {
-      Alert.alert('Atenção', 'Não foi possível realizar login')
       console.log('SignIn/index.tsx line 13 ~ error ~' + error);
+      Alert.alert('Atenção', 'Não foi possível realizar login')
     }
   }
-
   return (
     <Container>
       <Content>
