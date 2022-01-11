@@ -2,10 +2,12 @@ import React, {
   createContext,
   ReactNode,
   useContext,
+  useEffect,
   useState
 } from 'react'
 import * as AuthSession from 'expo-auth-session'
 import * as WebBrowser from 'expo-web-browser'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const { CLIENT_ID } = process.env
 const { REDIRECT_URI } = process.env
@@ -53,14 +55,25 @@ function AuthProvider({ children }: AuthProviderProps) {
 
       if (type === 'success') {
         const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
-        const userInfo = await response.json();
-        setUser(userInfo)
-        console.log(userInfo);
+        const userLogged = await response.json();
+        setUser(userLogged)
+        await AsyncStorage.setItem('@bomtempo:user', JSON.stringify(userLogged))
       }
     } catch (error) {
       throw new Error(error)
     }
   }
+
+  useEffect(() => {
+    async function loadUserStorageDate() {
+      const userStoraged = await AsyncStorage.getItem('@bomtempo:user');
+      if (userStoraged) {
+        const userLogged = JSON.parse(userStoraged) as User;
+        setUser(userLogged)
+      }
+    }
+    loadUserStorageDate()
+  }, [])
 
   return (
     <AuthContext.Provider value={{
