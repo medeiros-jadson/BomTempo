@@ -29,6 +29,7 @@ interface User {
 interface IAuthContextData {
   user: User
   signInWithGoogle(): Promise<void>
+  Logout(): Promise<void>
 }
 
 interface AuthorizationResponse {
@@ -64,6 +65,11 @@ function AuthProvider({ children }: AuthProviderProps) {
     }
   }
 
+  async function Logout() {
+    await AsyncStorage.removeItem('@bomtempo:user');
+    setUser({} as User)
+  }
+
   useEffect(() => {
     async function loadUserStorageDate() {
       const userStoraged = await AsyncStorage.getItem('@bomtempo:user');
@@ -79,6 +85,7 @@ function AuthProvider({ children }: AuthProviderProps) {
     <AuthContext.Provider value={{
       user,
       signInWithGoogle,
+      Logout
     }}>
       {children}
     </AuthContext.Provider>
