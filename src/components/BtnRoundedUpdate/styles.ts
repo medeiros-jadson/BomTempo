@@ -8,6 +8,7 @@ export const Container = styled.TouchableOpacity.attrs({
   align-items: center;
   justify-content: center;
   border-radius: 32.5px;
-  margin-top: 43px;
   background-color: ${({ theme }) => theme.colors.primary};
+  position: absolute;
+  bottom: 25px;
 `;

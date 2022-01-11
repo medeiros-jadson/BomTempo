@@ -1,9 +1,36 @@
 import React from 'react';
-import { Container } from './styles';
+import {
+  Container,
+  ContentMinMax,
+  TextSensation,
+  TextTemp,
+  ValueTemp,
+  Wrapper,
+  ValueSensation
+} from './styles';
 
-const ClimateDetails: React.FC = () => {
+interface Props {
+  min: string,
+  max: string,
+  sensation: string
+}
+
+const ClimateDetails: React.FC<Props> = ({ min, max, sensation }) => {
   return (
-    <Container />
+    <Container >
+      <ContentMinMax>
+        <Wrapper>
+          <TextTemp>Min</TextTemp>
+          <ValueTemp>{min}</ValueTemp>
+        </Wrapper>
+        <Wrapper>
+          <TextTemp>Max</TextTemp>
+          <ValueTemp>{max}</ValueTemp>
+        </Wrapper>
+      </ContentMinMax>
+      <TextSensation>Sensação térmica</TextSensation>
+      <ValueSensation>{sensation}</ValueSensation>
+    </Container>
   );
 }
 

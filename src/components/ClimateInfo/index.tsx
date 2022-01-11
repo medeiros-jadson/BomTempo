@@ -7,14 +7,19 @@ import {
   Wrapper
 } from './styles';
 
-const ClimateInfo: React.FC = () => {
+interface Props {
+  temperature: string,
+  description: string
+}
+
+const ClimateInfo: React.FC<Props> = ({ temperature, description }) => {
   return (
     <Container>
       <Wrapper>
-        <TextClimate>24</TextClimate>
+        <TextClimate>{temperature}</TextClimate>
         <TextCelsius>°C</TextCelsius>
       </Wrapper>
-      <DescriptionClimate>Nublado</DescriptionClimate>
+      <DescriptionClimate>{description}</DescriptionClimate>
     </Container>
   );
 }

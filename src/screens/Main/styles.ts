@@ -15,4 +15,6 @@ export const TextAdress = styled(RobotoBold)`
 export const Loading = styled(ActivityIndicator).attrs({
   size: 'large',
   color: '#FFFF'
-})`` 
+})`
+  margin-top: 30%;
+` 
