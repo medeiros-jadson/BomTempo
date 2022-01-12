@@ -96,4 +96,4 @@ Protótipo: https://www.figma.com/file/r9XsKFskcAqo8tBvko1r2k/BomTempo-App?node-
 
 - Conte a outras pessoas sobre este projeto 📢
 - Convide alguém da equipe para um café
-- Obrigado publicamente 🤓
+- Obrigado publicamente 🤓.
