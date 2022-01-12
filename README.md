@@ -66,6 +66,9 @@ yarn ios
 
 ## 📦 Entrega
 
+![simulator_screenshot_094B38AA-592E-4784-8793-88A59A2A4916](https://user-images.githubusercontent.com/28719627/149162623-23677c15-14f4-447c-9a7c-84a7444f375c.png)![simulator_screenshot_CC36D496-3D86-4BBD-BA25-B80D7559D66B](https://user-images.githubusercontent.com/28719627/149162779-290eaa52-a8e5-41fd-8d04-d589c2319ac5.png)
+
+
 ## 🛠️ Construído com
 
 - [React Native](https://reactnative.dev/)
