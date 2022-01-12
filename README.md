@@ -51,19 +51,17 @@ APPID=
 Rode a aplicação com:
 
 ```
-yarn android
+yarn start
 ```
 
 ou
 
 ```
+yarn android
+```
+
+```
 yarn ios
-```
-
-ou com Expo Go:
-
-```
-yarn start
 ```
 
 ## 📦 Entrega
