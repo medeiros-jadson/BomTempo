@@ -4,7 +4,12 @@
     "slug": "bomtempo",
     "scheme": "bomtempo",
     "version": "1.0.0",
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#88B5CE"
+    }
   },
   "name": "BomTempo"
 }
