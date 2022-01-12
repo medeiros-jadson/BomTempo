@@ -43,6 +43,7 @@ para consumir os dados relacionados ao clima crie uma chave em : https://openwea
 e insira no arquivo .env as váriaveis de ambiente, adicionando em APPID a sua chave:
 
 ```
+
 #API DE CLIMA
 API_BASE=http://api.openweathermap.org/data/2.5
 APPID=
@@ -66,7 +67,8 @@ yarn ios
 
 ## 📦 Entrega
 
-![simulator_screenshot_094B38AA-592E-4784-8793-88A59A2A4916](https://user-images.githubusercontent.com/28719627/149162623-23677c15-14f4-447c-9a7c-84a7444f375c.png)![simulator_screenshot_CC36D496-3D86-4BBD-BA25-B80D7559D66B](https://user-images.githubusercontent.com/28719627/149162779-290eaa52-a8e5-41fd-8d04-d589c2319ac5.png)
+![LOGIN](https://user-images.githubusercontent.com/28719627/149163519-b50a73b2-ddd1-4134-8adc-06bb77f65de5.png)![MAIN](https://user-images.githubusercontent.com/28719627/149163561-c42cd73c-1fa4-4840-817f-6716c4448e0d.png)
+
 
 
 ## 🛠️ Construído com
