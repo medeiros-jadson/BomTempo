@@ -52,13 +52,12 @@ APPID=
 Rode a aplicação com:
 
 ```
-yarn start
+expo start
 ```
-
+ou
 ```
 yarn android
 ```
-ou
 ```
 yarn ios
 ```
