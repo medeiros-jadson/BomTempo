@@ -55,12 +55,10 @@ Rode a aplicação com:
 yarn start
 ```
 
-ou
-
 ```
 yarn android
 ```
-
+ou
 ```
 yarn ios
 ```
