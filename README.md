@@ -54,10 +54,13 @@ Rode a aplicação com:
 ```
 expo start
 ```
+
 ou
+
 ```
 yarn android
 ```
+
 ```
 yarn ios
 ```
@@ -68,7 +71,11 @@ yarn ios
 
 Protótipo: https://www.figma.com/file/r9XsKFskcAqo8tBvko1r2k/BomTempo-App?node-id=0%3A1
 
+## Teste
 
+```
+yarn test
+```
 
 ## 🛠️ Construído com
 
