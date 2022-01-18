@@ -56,3 +56,6 @@ dist/
 
 #ENV
 .env
+
+#Test
+coverage/
