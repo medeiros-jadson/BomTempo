@@ -7,8 +7,8 @@ import React, {
 } from 'react'
 import * as AuthSession from 'expo-auth-session'
 import * as WebBrowser from 'expo-web-browser'
-/* import AsyncStorage from '@react-native-async-storage/async-storage' */
-import { AsyncStorage } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage'
+/* import { AsyncStorage } from 'react-native'; */
 
 const { CLIENT_ID } = process.env
 const { REDIRECT_URI } = process.env
