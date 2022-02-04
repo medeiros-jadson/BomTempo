@@ -8,6 +8,7 @@ import React, {
 import * as AuthSession from 'expo-auth-session'
 import * as WebBrowser from 'expo-web-browser'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import axios from 'axios'
 
 const { CLIENT_ID } = process.env
 const { REDIRECT_URI } = process.env
@@ -55,8 +56,8 @@ function AuthProvider({ children }: AuthProviderProps) {
         .startAsync({ authUrl }) as AuthorizationResponse;
 
       if (type === 'success') {
-        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
-        const userLogged = await response.json();
+        const { data } = await axios.get(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
+        const userLogged = await data.json();
         setUser(userLogged)
         await AsyncStorage.setItem('@bomtempo:user', JSON.stringify(userLogged))
       }
