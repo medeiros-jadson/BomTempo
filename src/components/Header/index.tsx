@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-import { useAuth } from '../../hooks/Auth';
+import { useAuth } from 'hooks/Auth';
 import { Container, Text, Avatar, Menu, TextLogout } from './styles';
 
 const Header: React.FC = () => {

@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
-import Logo from '../../../assets/logo.svg';
-import { RobotoBold } from '../../components/Typography';
+import Logo from 'assets/logo.svg';
+import { RobotoBold } from 'components/Typography';
 
 export const Container = styled.View`
   flex: 1;

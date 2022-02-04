@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Content, Line, Wrapper, Text, LogoSignIn } from './styles'
-import BtnSignInGoogle from '../../components/BtnSignInGoogle'
-import { useAuth } from '../../hooks/Auth';
+import BtnSignInGoogle from 'components/BtnSignInGoogle'
+import { useAuth } from 'hooks/Auth';
 import { Alert } from 'react-native';
 
 const SignIn: React.FC = () => {

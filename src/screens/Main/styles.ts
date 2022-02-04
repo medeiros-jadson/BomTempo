@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { RobotoBold } from '../../components/Typography';
+import { RobotoBold } from 'components/Typography';
 import { ActivityIndicator } from 'react-native'
 
 export const Adress = styled.View`
@@ -17,4 +17,4 @@ export const Loading = styled(ActivityIndicator).attrs({
   color: '#FFFF'
 })`
   margin-top: 30%;
-` 
+`

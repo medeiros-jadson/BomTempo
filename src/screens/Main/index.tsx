@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Adress, TextCity, TextAdress, Loading } from './styles';
-import Background from '../../components/Background'
-import Header from '../../components/Header';
-import ClimateInfo from '../../components/ClimateInfo';
-import ClimateDetails from '../../components/ClimateDetails';
-import BtnRoundedUpdate from '../../components/BtnRoundedUpdate';
-import { GetLocation } from '../../services/Location/location.service';
-import { FetchClimate } from '../../services/Climate/climate.service';
+import Background from 'components/Background'
+import Header from 'components/Header';
+import ClimateInfo from 'components/ClimateInfo';
+import ClimateDetails from 'components/ClimateDetails';
+import BtnRoundedUpdate from 'components/BtnRoundedUpdate';
+import { GetLocation } from 'services/Location/location.service';
+import { FetchClimate } from 'services/Climate/climate.service';
 import { Alert } from 'react-native';
-import { AdressDTO } from '../../dtos/AdressDTO';
-import { ClimateDTO } from '../../dtos/ClimateDTO'
+import { AdressDTO } from 'dtos/AdressDTO';
+import { ClimateDTO } from 'dtos/ClimateDTO'
 
 
 const Main: React.FC = () => {

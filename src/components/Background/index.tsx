@@ -3,7 +3,7 @@ import { Image } from './styles';
 
 const Background: React.FC = ({ children }) => {
   return (
-    <Image source={require('../../../assets/background.png')} >
+    <Image source={require('assets/background.png')} >
       {children}
     </Image>
   );

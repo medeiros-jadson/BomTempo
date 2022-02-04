@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacityProps } from 'react-native';
-import IconUpdate from '../../../assets/iconUpdate.svg'
+import IconUpdate from 'assets/iconUpdate.svg'
 import { Container } from './styles';
 
 interface Props extends TouchableOpacityProps { }

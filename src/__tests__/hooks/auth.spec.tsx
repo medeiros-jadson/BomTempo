@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { AuthProvider, useAuth } from '../../hooks/Auth';
+import { AuthProvider, useAuth } from 'hooks/Auth';
 
 jest.mock('expo-google-app-auth');
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 import { TouchableOpacityProps } from 'react-native'
-import Google from '../../../assets/google.svg'
+import Google from 'assets/google.svg'
 
 interface Props extends TouchableOpacityProps { }
 
