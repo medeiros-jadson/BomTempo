@@ -2,6 +2,8 @@
 
 Projeto com o objetivo de informar o clima de acordo com a localização do usuário e talvez o início de um novo ciclo 🚀
 
+edit: Deu bom! <3
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
